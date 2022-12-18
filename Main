@@ -1,0 +1,20 @@
+local players = game.Players.LocalPlayer
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Winky.cc", "Sentinel")
+
+--//Tabs//--
+local Tab = Window:NewTab("Home")
+local Tab2 = Window:NewTab("Scripts")
+--//Section//--
+local Section = Tab:NewSection("Home")
+local Section2 = Tab2:NewSection("Scripts")
+--//Label//--
+Section:NewLabel("Welcome To Winky.cc")
+---//Button//--
+Section2:NewButton("Gelatek Hub", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Gelatekussy/GelatekHub/main/Main.lua"))()
+end)
+
+Section2:NewButton("Script Hub", "", function()
+    
+end)
